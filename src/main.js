@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+// 引入全局样式表
+import './styles/index.less'
 
 Vue.config.productionTip = false
 
