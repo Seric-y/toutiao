@@ -4,16 +4,20 @@ import router from './router'
 import store from './store'
 
 // 加载 Vant 核心组件库
-import Vant from 'vant';
+import Vant from 'vant'
 
 // 加载 Vant 全局样式
-import 'vant/lib/index.css';
+import 'vant/lib/index.css'
 
 // 引入全局样式表
 import './styles/index.less'
 
+// 加载动态设置 REM 基准值
+import 'amfe-flexible'
+
+import './utils/rem.js'
 // 注册使用 Vant 组件库
-Vue.use(Vant);
+Vue.use(Vant)
 
 Vue.config.productionTip = false
 
