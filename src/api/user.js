@@ -11,3 +11,13 @@ export const login = data => {
 		data
 	})
 }
+/* 
+发送验证码
+ 注意：每个手机号每分钟一次
+ */
+export const sendSms = mobile => {
+	return request({
+		method:'GET',
+		url:`/app/v1_0/sms/codes/${mobile}`,
+	})
+}
